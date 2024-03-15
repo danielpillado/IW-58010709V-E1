@@ -1,10 +1,14 @@
 html {
     scroll-behavior: smooth;
 }
-botonBusqueda{
-    padding: 5px 10px; /* Ajusta el relleno para cambiar el tamaño */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+
+botonBusqueda {
+    padding: 5px 10px;
+    /* Ajusta el relleno para cambiar el tamaño */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
 }
+
 * {
     /* Limitar el tamaño margin,padding...  */
     box-sizing: border-box;
@@ -62,8 +66,6 @@ header.logo {
 
 }
 
-
-
 header.nav {
     display: flex;
     flex-direction: column;
@@ -78,15 +80,15 @@ header a {
     color: black;
 }
 
-.nav a:hover, .barraNavegador a:hover {
-    color: purple; /* Cambia a morado al pasar el mouse */
+.nav a:hover,
+.barraNavegador a:hover {
+    color: purple;
+    /* Cambia a morado al pasar el mouse */
 }
 
 header a.hover {
     color: purple;
 }
-
-
 
 #hero {
     position: relative;
@@ -98,19 +100,25 @@ header a.hover {
     height: 90vh;
     color: white;
 }
+
 .hero-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio sin distorsionarse */
-    z-index: -1; /* Esto asegura que la imagen quede detrás del texto */
-    opacity: 0.5; /* Ajusta la transparencia de la imagen de fondo */
+    object-fit: cover;
+    /* Esto asegura que la imagen cubra todo el espacio sin distorsionarse */
+    z-index: -1;
+    /* Esto asegura que la imagen quede detrás del texto */
+    opacity: 0.5;
+    /* Ajusta la transparencia de la imagen de fondo */
 }
-#hero h1, #hero .enlace-articulos {
-    position: relative; 
-    z-index: 1; 
+
+#hero h1,
+#hero .enlace-articulos {
+    position: relative;
+    z-index: 1;
 }
 
 #hero h1 {
@@ -122,12 +130,29 @@ header a.hover {
 
 }
 
-
-
 #somosPillando .container {
+    display: flex;
+    align-items: center;
     text-align: center;
-    padding: 200px 12px;
+    padding: 200px 12px
+}
 
+#somosPillando .img-container {
+    background-image: url("images/logo2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 400px;
+    margin-right: 20px;
+}
+
+#somosPillando .texto {
+    width: 50%;
+    text-align: left;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header {
@@ -138,7 +163,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    
     width: 100%;
     top: 0;
 }
@@ -163,6 +187,11 @@ header {
     font-size: 3em;
 }
 
+#ultimasNoticias .container {
+    max-width: 1200px; 
+    margin: auto;
+}
+
 #ultimasNoticias .triptico {
     background-position: center center;
     background-size: cover;
@@ -170,33 +199,58 @@ header {
     margin: 20px;
     border-radius: 12px;
 }
+.triptico {
+    flex-basis: 30%; 
+    margin-bottom: 20px;
+}
 
+.triptico-img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.triptico-text {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 15px;
+    border-radius: 5px; 
+    margin-top: -5px; 
+}
 .triptico:first-child {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-
-        /* imagen nueva */
-        /* url(images/heroimage.jpg); */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('images/noticia1.jpg');
+    background-size: cover;
+    background-position: center;
 
 }
 
 .triptico:nth-child(2) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-        /* imagen nueva */
-        /* url(images/heroimage.jpg); */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('images/noticia2.jpg');
+    background-size: cover;
+    background-position: center;
 
 }
 
 .triptico:nth-child(3) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-        /* imagen nueva */
-        /* url(images/heroimage.jpg); */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('images/noticia3.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
+.triptico-img {
+    width: 100%; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+}
+
+.triptico-text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px; 
+    border-radius: 10px; 
 }
 
 .logo {
@@ -239,15 +293,34 @@ body {
     height: 100%;
 }
 
-#fiabilidad.container {
-    text-align: center;
-    padding: 200px 12px;
+#fiabilidad .container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 100px 12px; 
+    max-width: 1200px;
+    margin: auto;
 }
 
-#fiabilidad li {
-    margin: 12px 0px;
-    font-weight: bold;
+#fiabilidad .fiabilidad-img {
+    width: calc(50% - 5px);
+    max-width: 400px; 
+    margin-right: 5px; 
 }
+
+#fiabilidad .fiabilidad-list {
+    width: calc(50% + 5px);
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+#fiabilidad .fiabilidad-list li {
+    margin: 12px 0;
+    font-weight: bold;
+    font-size: 1.2rem; 
+}
+
 
 #donativos {
     display: flex;
@@ -312,25 +385,23 @@ footer.container {
 
     #somosPillando.container {
         display: flex;
-        justify-content: space-evenly;
-
+        align-items: center;
+        text-align: center;
+        padding: 50px 12px;
 
     }
 
-    #somosPillando.img-container {
-        background-image: url("images/");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
+    #somosPillando .img-fluid {
+        flex-shrink: 0;
+        height: auto;
         width: 400px;
-
+        margin-right: 20px;
     }
 
     #somosPillando .texto {
         width: 50%;
-        text-align: initial;
+        text-align: left;
         padding-left: 30px;
-        max-width: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -342,7 +413,8 @@ footer.container {
 
     #ultimasNoticias.noticias {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     #ultimasNoticias.triptico {
@@ -413,15 +485,15 @@ footer.container {
 }
 
 
-#donativos h2{
+#donativos h2 {
     font-size: 5em;
 }
 
-#donativos button{
+#donativos button {
     font-size: 2em;
 }
 
-footer.container{
+footer.container {
     justify-items: flex-end;
 }
 
@@ -436,48 +508,68 @@ footer.container{
 /* ESTILOS DEL HEADER */
 /* Estilos para el contenedor principal dentro del header */
 .container {
-    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
-    align-items: center; /* Alinea verticalmente los elementos en su centro */
-    justify-content: space-between; /* Separa el contenido a lo largo del contenedor */
+    display: flex;
+    /* Usa flexbox para alinear los elementos horizontalmente */
+    align-items: center;
+    /* Alinea verticalmente los elementos en su centro */
+    justify-content: space-between;
+    /* Separa el contenido a lo largo del contenedor */
 }
 
 /* Estilos para el logotipo */
 .logoImg {
-    height: 75px; /* Reduce el tamaño del logotipo */
-    width: auto; /* Mantiene la proporción del logotipo */
+    height: 75px;
+    /* Reduce el tamaño del logotipo */
+    width: auto;
+    /* Mantiene la proporción del logotipo */
 }
 
 /* Estilos para el nombre del logotipo, si es necesario */
 .logoNombre {
-    margin-left: 10px; /* Añade un margen si deseas separar el texto del logotipo de la imagen */
+    margin-left: 10px;
+    /* Añade un margen si deseas separar el texto del logotipo de la imagen */
 }
 
 /* Estilos para la sección de búsqueda */
 #busqueda {
-    display: flex; /* Usa flexbox para alinear el campo de búsqueda y el botón */
-    align-items: center; /* Alinea los elementos internos en el centro */
+    display: flex;
+    /* Usa flexbox para alinear el campo de búsqueda y el botón */
+    align-items: center;
+    /* Alinea los elementos internos en el centro */
 }
 
 /* Estilos para el botón de búsqueda, ajusta según necesites */
 .botonBusqueda {
-    font-size: 0.8em; /* Reduce el tamaño del texto */
-    padding: 5px 10px; /* Reduce el relleno para disminuir el tamaño del botón */
-    transition: background-color 0.3s; /* Hace que el cambio de color sea más suave */
-    cursor:pointer
+    font-size: 0.8em;
+    /* Reduce el tamaño del texto */
+    padding: 5px 10px;
+    /* Reduce el relleno para disminuir el tamaño del botón */
+    transition: background-color 0.3s;
+    /* Hace que el cambio de color sea más suave */
+    cursor: pointer
 }
+
 .botonBusqueda:hover {
-    background-color: purple; 
+    background-color: purple;
 }
+
 /* Estilos para la barra de navegación si es necesaria alguna modificación */
-.barraNavegador, #busqueda {
-    display: flex; /* Esto asegura que los enlaces se alineen horizontalmente */
+.barraNavegador,
+#busqueda {
+    display: flex;
+    /* Esto asegura que los enlaces se alineen horizontalmente */
     align-items: center;
 }
 
 .barraNavegador a {
-    margin: 0 10px; /* Ajusta el espaciado según necesites */
-    text-decoration: none; /* Remueve el subrayado del texto */
-    color: black; /* Ajusta el color del texto */
-    background-color: transparent; /* Asegura que el fondo sea transparente */
-    border: none; /* Remueve cualquier borde */
+    margin: 0 10px;
+    /* Ajusta el espaciado según necesites */
+    text-decoration: none;
+    /* Remueve el subrayado del texto */
+    color: black;
+    /* Ajusta el color del texto */
+    background-color: transparent;
+    /* Asegura que el fondo sea transparente */
+    border: none;
+    /* Remueve cualquier borde */
 }
