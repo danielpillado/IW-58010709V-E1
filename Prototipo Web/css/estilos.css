@@ -1,34 +1,53 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-*{
+
+* {
     /* Limitar el tamaño margin,padding...  */
     box-sizing: border-box;
 }
-h1{font-size: 3.0em;}
-h2{font-size: 2.5em;}
-h3{font-size: 2em;}
-p{font-size: 1.25em;}
-ul{list-style: none;}
-button{
+
+h1 {
+    font-size: 3.0em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
     font-size: 2em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
-    border:2px solid black;
+    border: 2px solid black;
     box-shadow: 2px 2px 5px black;
     color: white;
     background-color: blue;
 }
-button:hover{
-    background-color:rgb(81, 81, 240) ;
+
+button:hover {
+    background-color: rgb(81, 81, 240);
 }
 
-.container{
+.container {
     max-width: 1300px;
     margin: auto;
 }
-header.logo{
+
+header.logo {
     margin: 0px;
     padding: 25px 30px;
     font-weight: bold;
@@ -36,62 +55,66 @@ header.logo{
     font-size: 1.7em;
 
 }
-header.container{
+
+header.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 
 }
-header.nav{
+
+header.nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
-header a{
+
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
-header a.hover{
+
+header a.hover {
     color: blueviolet;
 }
 
-#hero{
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
         url(images/heroimage.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-#hero h1{
+#hero h1 {
     color: white;
 }
 
-#hero button{
+#hero button {
     font-size: 1.75em;
 
 }
-#somosPillando{
+
+#somosPillando {}
+
+#somosPillando .container {
+    text-align: center;
+    padding: 200px 12px;
 
 }
-#somosPillando .container{
-text-align: center;
-padding: 200px 12px;
 
-}
 header {
     background-color: whitesmoke;
     /* Elementos en horizontal */
@@ -105,79 +128,84 @@ header {
     top: 0;
 }
 
-#ultimasNoticias{
+#ultimasNoticias {
     background-color: black;
     color: white;
     text-align: center;
 
 }
-#ultimasNoticias.container{
+
+#ultimasNoticias.container {
     padding: 150px 12px;
 }
-#ultimasNoticias p{
+
+#ultimasNoticias p {
     display: none;
 }
 
-#ultimasNoticias h2{
+#ultimasNoticias h2 {
     margin-top: 0px;
     font-size: 3em;
 }
-#ultimasNoticias .triptico{
+
+#ultimasNoticias .triptico {
     background-position: center center;
     background-size: cover;
-    padding:50px ;
+    padding: 50px;
     margin: 20px;
     border-radius: 12px;
 }
-.triptico:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-        
-        /* imagen nueva */
-        /* url(images/heroimage.jpg); */
 
-}
-.triptico:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-        /* imagen nueva */
-        /* url(images/heroimage.jpg); */
+.triptico:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
 
-}
-.triptico:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
         /* imagen nueva */
         /* url(images/heroimage.jpg); */
 
 }
 
-.logo{
+.triptico:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        /* imagen nueva */
+        /* url(images/heroimage.jpg); */
+
+}
+
+.triptico:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        /* imagen nueva */
+        /* url(images/heroimage.jpg); */
+
+}
+
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo img{
+.logo img {
     height: 75px;
     margin-right: 10px;
 
 }
 
-a{
+a {
     color: black;
 
 }
-nav a{
+
+nav a {
     font-weight: 650px;
     padding-right: 10px;
 }
-nav a:hover{
+
+nav a:hover {
     color: white;
 }
 
@@ -193,20 +221,20 @@ body {
     font-family: Arial;
     margin: 0;
     padding: 0;
-    height: 100%; 
-}   
+    height: 100%;
+}
 
-#fiabilidad.container{
+#fiabilidad.container {
     text-align: center;
     padding: 200px 12px;
 }
 
-#fiabilidad li{
+#fiabilidad li {
     margin: 12px 0px;
     font-weight: bold;
 }
 
-#donativos{
+#donativos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,23 +244,27 @@ body {
     color: white;
     height: 80vh;
 }
-#donativos h2{
+
+#donativos h2 {
     font-size: 9vw;
 }
-#donativos button{
+
+#donativos button {
     font-size: 5vw;
 }
 
 
-footer{
+footer {
     background-color: black;
 }
-footer p{
-margin: 0;
-padding: 12px;
-color: rgb(100, 100, 100);
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
 }
-footer.container{
+
+footer.container {
     height: 140px;
     display: flex;
     justify-content: center;
@@ -240,37 +272,44 @@ footer.container{
 
 }
 
-@media(min-width:720px){
-    header{
-        position:fixed;
+@media(min-width:720px) {
+    header {
+        position: fixed;
         width: 100%;
     }
-    header.container{
+
+    header.container {
         flex-direction: row;
         justify-content: space-between;
     }
-    header nav{
+
+    header nav {
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 30px;
     }
-    
-    #somosPillando.container{
+
+    #somosPillando.container {
         display: flex;
 
     }
 
-    #somosPillando.img-container{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5),
+    #somosPillando.img-container {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5),
 
-        ),url("images/");
+            ), url("images/");
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 400px;
 
+    }
+
+    #somosPillando .texto {
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
     }
 }
