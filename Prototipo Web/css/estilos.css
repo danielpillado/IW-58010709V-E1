@@ -1,3 +1,25 @@
+header {
+    /* Elementos en horizontal */
+    display: flex;
+    justify-content: space-between;
+    background-color: royalblue;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo{
+    display: flex;
+
+}
+
+.logo img{
+    height: 75px;
+
+}
+
+
 main {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -7,13 +29,7 @@ main {
 }
 
 
-header {
-    background-color: wheat;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
+
 
 body {
     margin: 0;
