@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     /* Limitar el tamaño margin,padding...  */
     box-sizing: border-box;
@@ -22,18 +24,129 @@ button:hover{
     background-color:rgb(81, 81, 240) ;
 }
 
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+header.logo{
+    margin: 0px;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.7em;
 
+}
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+header.nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a.hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(images/heroimage.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+#somosPillando{
+
+}
+#somosPillando .container{
+text-align: center;
+padding: 200px 12px;
+
+}
 header {
+    background-color: whitesmoke;
     /* Elementos en horizontal */
     display: flex;
     min-height: 70px;
-    background-color: red;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     position: fixed;
     width: 100%;
     top: 0;
+}
+
+#ultimasNoticias{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+#ultimasNoticias.container{
+    padding: 150px 12px;
+}
+#ultimasNoticias p{
+    display: none;
+}
+
+#ultimasNoticias h2{
+    margin-top: 0px;
+}
+#ultimasNoticias .triptico{
+    background-position: center center;
+    background-size: cover;
+}
+.triptico:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        
+        /* imagen nueva */
+        /* url(images/heroimage.jpg); */
+
+}
+.triptico:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        /* imagen nueva */
+        /* url(images/heroimage.jpg); */
+
+}
+.triptico:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        /* imagen nueva */
+        /* url(images/heroimage.jpg); */
+
 }
 
 .logo{
