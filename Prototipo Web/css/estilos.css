@@ -354,21 +354,34 @@ body {
 
 
 footer {
-    background-color: black;
+    background-color:whitesmoke;
+    color: black;
+    padding: 20px 0;
 }
 
 footer p {
+    text-align: center;
     margin: 0;
-    padding: 12px;
-    color: rgb(100, 100, 100);
+    padding: 10px;
 }
 
-footer.container {
-    height: 140px;
+.footer-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 100px;
+    transition: transform 0.5s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1); 
 }
 
 @media(min-width:720px) {
