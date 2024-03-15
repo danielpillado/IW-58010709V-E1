@@ -8,6 +8,19 @@ h2{font-size: 2.5em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
 ul{list-style: none;}
+button{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:2px solid black;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    background-color: blue;
+}
+button:hover{
+    background-color:rgb(81, 81, 240) ;
+}
 
 
 header {
