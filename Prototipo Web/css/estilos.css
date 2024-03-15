@@ -337,8 +337,19 @@ body {
     font-size: 9vw;
 }
 
-#donativos button {
-    font-size: 5vw;
+.donativos-button {
+    display: inline-block;
+    padding: 15px 30px; 
+    background-color: #4CAF50; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 2vw; 
+    border-radius: 5px; 
+}
+
+.donativos-button:hover {
+    background-color: #367B48; 
+    cursor: pointer; 
 }
 
 
