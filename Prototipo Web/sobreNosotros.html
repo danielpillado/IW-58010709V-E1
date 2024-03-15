@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Pillando NEWS</title>
+    <title>Sobre Nosotros-Pillando NEWS</title>
+    <link rel="icon" href="images/logo.jpg">
 </head>
+
 <body>
-    
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Logotipo Pillando NEWS" class="logoImg">
+            </a>
+            <nav class="barraNavegador">
+                <a href="index.html" class="enlace-noticias">Inicio</a>
+                <a href="ultimasNoticias.html" class="enlace-ultimas">Últimas Noticias</a>
+                <a href="sobreNosotros.html" class="enlace-sobre">Sobre Nosotros</a>
+                <a href="contacto.html" class="enlace-contacto">Contacto</a>
+            </nav>
+            <section id="busqueda">
+                <form>
+                    <input type="search" name="nofuncional" placeholder="Busca tu artículo aquí..." aria-label="Búsqueda ficticia" />
+                    <button type="button" class="botonBusqueda" aria-label="Buscar">Buscar</button>
+                </form>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section id="quienesSomos">
+            <h2>¿Quiénes somos?</h2>
+            <p>Bienvenido/a a Pillando NEWS, tu fuente confiable y actualizada de noticias. Fundada en el año 2024, nuestra revista se ha dedicado a proporcionar la información más reciente y relevante del mundo. Estamos comprometidos con la veracidad y la calidad periodística.</p>
+        </section>
+        
+        <section id="ubicacion">
+            <h2>¿Dónde puedes encontrarnos?</h2>
+            <div class="mapa">
+                <iframe src="https://maps.google.com/maps?q=Pozoa%20Kalea,%20s/n,%2001013%20Gasteiz,%20Araba&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; Pillando NEWS 2024</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.jfif" alt="Instagram"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
