@@ -318,8 +318,9 @@ footer.container {
         flex-direction: column;
         justify-content: center;
     }
-    #somosPillando h2{
+    #somosPillando h3{
         margin-top: 0px;
+
     }
 
     #ultimasNoticias.noticias{
