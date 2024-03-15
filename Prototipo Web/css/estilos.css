@@ -289,7 +289,7 @@ footer.container {
         padding-right: 30px;
     }
 
-    hero h1{
+    hero h1 {
         font-size: 5em;
     }
 
@@ -301,7 +301,7 @@ footer.container {
     }
 
     #somosPillando.img-container {
-        background-image:url("images/");
+        background-image: url("images/");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -312,21 +312,23 @@ footer.container {
     #somosPillando .texto {
         width: 50%;
         text-align: initial;
-        padding-left:30px;
+        padding-left: 30px;
         max-width: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    #somosPillando h2{
+
+    #somosPillando h2 {
         margin-top: 0px;
     }
 
-    #ultimasNoticias.noticias{
-    display: flex;
-    justify-content: center;
+    #ultimasNoticias.noticias {
+        display: flex;
+        justify-content: center;
     }
-    #ultimasNoticias.triptico{
+
+    #ultimasNoticias.triptico {
         padding: 15px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
@@ -334,40 +336,67 @@ footer.container {
         background-color: rgba(45, 45, 45, 0.5);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
-    #ultimasNoticias p{
+
+    #ultimasNoticias p {
         display: block;
         margin-bottom: 30px;
     }
-    #ultimasNoticias h2{
-    margin-top: 0px; 
-    font-size: 4em; 
+
+    #ultimasNoticias h2 {
+        margin-top: 0px;
+        font-size: 4em;
     }
 
     .triptico:first-child {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
-    
+
             /* imagen nueva */
             /* url(images/heroimage.jpg); */
-    
+
     }
-    
+
     .triptico:nth-child(2) {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
             /* imagen nueva */
             /* url(images/heroimage.jpg); */
-    
+
     }
-    
+
     .triptico:nth-child(3) {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
             /* imagen nueva */
             /* url(images/heroimage.jpg); */
-    
+
+    }
+
+    #fiabilidad {
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw-500px) 120px;
+
+    }
+
+
+}
+
+#fiabilidad.container {
+    text-align: initial;
+
+}
+
+#fiabilidad ul {
+    margin-left: 100px;
+}
+
+@media(min-width: 1200px) {
+    #fiabilidad {
+        background-position-x: calc(100vw -800px);
     }
 }
