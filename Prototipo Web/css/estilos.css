@@ -289,7 +289,9 @@ footer.container {
         padding-right: 30px;
     }
 
-    
+    hero h1{
+        font-size: 5em;
+    }
 
     #somosPillando.container {
         display: flex;
@@ -318,5 +320,20 @@ footer.container {
     }
     #somosPillando h2{
         margin-top: 0px;
+    }
+
+    #ultimasNoticias.noticias{
+    display: flex;
+    justify-content: center;
+    }
+    #ultimasNoticias.triptico{
+        padding: 15px;
+    }
+    #ultimasNoticias p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #ultimasNoticias h3{
+    margin-top: 0px;  
     }
 }
