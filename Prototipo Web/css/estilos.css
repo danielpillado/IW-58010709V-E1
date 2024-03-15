@@ -289,9 +289,11 @@ footer.container {
         padding-right: 30px;
     }
 
+    
+
     #somosPillando.container {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
 
 
     }
@@ -308,10 +310,13 @@ footer.container {
     #somosPillando .texto {
         width: 50%;
         text-align: initial;
-        padding: 0px 30px;
+        padding-left:30px;
         max-width: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    #somosPillando h2{
+        margin-top: 0px;
     }
 }
