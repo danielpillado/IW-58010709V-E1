@@ -395,6 +395,19 @@ footer.container {
     margin-left: 100px;
 }
 
+
+#donativos h2{
+    font-size: 5em;
+}
+
+#donativos button{
+    font-size: 2em;
+}
+
+footer.container{
+    justify-items: flex-end;
+}
+
 @media(min-width: 1200px) {
     #fiabilidad {
         background-position-x: calc(100vw -800px);
