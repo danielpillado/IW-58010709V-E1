@@ -2,13 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 botonBusqueda{
-font-size: 0.em; 
-padding: 5px 10px; 
-border-radius: 5px; 
-border: 1px solid #000; 
-background-color: #f2f2f2; 
-cursor: pointer; 
-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+    padding: 5px 10px; /* Ajusta el relleno para cambiar el tamaño */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 * {
     /* Limitar el tamaño margin,padding...  */
@@ -54,6 +49,8 @@ button:hover {
     display: flex;
     max-width: 1300px;
     margin: auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header.logo {
@@ -81,28 +78,43 @@ header a {
     color: black;
 }
 
-header a.hover {
-    color: blueviolet;
+.nav a:hover, .barraNavegador a:hover {
+    color: purple; /* Cambia a morado al pasar el mouse */
 }
 
+header a.hover {
+    color: purple;
+}
+
+
+
 #hero {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-        url(images/heroimage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    color: white;
+}
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio sin distorsionarse */
+    z-index: -1; /* Esto asegura que la imagen quede detrás del texto */
+    opacity: 0.5; /* Ajusta la transparencia de la imagen de fondo */
+}
+#hero h1, #hero .enlace-articulos {
+    position: relative; 
+    z-index: 1; 
 }
 
 #hero h1 {
-    color: white;
+    color: blue;
 }
 
 #hero button {
@@ -110,7 +122,7 @@ header a.hover {
 
 }
 
-#somosPillando {}
+
 
 #somosPillando .container {
     text-align: center;
@@ -285,7 +297,6 @@ footer.container {
         flex-direction: row;
         justify-content: space-between;
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
@@ -432,7 +443,7 @@ footer.container{
 
 /* Estilos para el logotipo */
 .logoImg {
-    height: 50px; /* Reduce el tamaño del logotipo */
+    height: 75px; /* Reduce el tamaño del logotipo */
     width: auto; /* Mantiene la proporción del logotipo */
 }
 
@@ -449,21 +460,24 @@ footer.container{
 
 /* Estilos para el botón de búsqueda, ajusta según necesites */
 .botonBusqueda {
-    margin-left: 10px; /* Añade margen a la izquierda para separarlo del campo de búsqueda */
-    padding: 5px 10px; /* Ajusta el relleno para cambiar el tamaño */
+    font-size: 0.8em; /* Reduce el tamaño del texto */
+    padding: 5px 10px; /* Reduce el relleno para disminuir el tamaño del botón */
+    transition: background-color 0.3s; /* Hace que el cambio de color sea más suave */
+    cursor:pointer
 }
-
+.botonBusqueda:hover {
+    background-color: purple; 
+}
 /* Estilos para la barra de navegación si es necesaria alguna modificación */
-.barraNavegador {
+.barraNavegador, #busqueda {
     display: flex; /* Esto asegura que los enlaces se alineen horizontalmente */
-    list-style: none; /* Elimina los marcadores de lista predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
-    margin: 0; /* Elimina los márgenes predeterminados */
+    align-items: center;
 }
 
 .barraNavegador a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    margin-right: 20px; /* Añade margen a la derecha de cada enlace */
-    color: black; /* Color del texto para los enlaces, ajusta según el diseño */
-    font-weight: bold; /* Hace el texto de los enlaces más grueso */
+    margin: 0 10px; /* Ajusta el espaciado según necesites */
+    text-decoration: none; /* Remueve el subrayado del texto */
+    color: black; /* Ajusta el color del texto */
+    background-color: transparent; /* Asegura que el fondo sea transparente */
+    border: none; /* Remueve cualquier borde */
 }
