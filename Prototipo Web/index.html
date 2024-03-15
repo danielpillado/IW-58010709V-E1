@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilos.css">
-        <title>Pillando NEWS</title>
-        <link rel="icon" href="images/logo.jpg">
-        <!--Cambiar titulo del sitio, title -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Pillando NEWS</title>
+    <link rel="icon" href="images/logo.jpg">
+    <!--Cambiar titulo del sitio, title -->
+</head>
 
-    <body>
+<body>
 
-            <!-- Estructura donde empieza el Header -->
-            <header>
-                <!-- Contenedor DIV para el logotipo. Clase logo -->
-                <div class="logo">
-                    <!-- Si se hace click en el logo se retorna a la pagina principal -->
-                    <a href="index.html">
-                        <img src="images/logo.jpg" alt="Logotipo Pillando NEWS" class = "logoImg">
-                        <h2 class="logoNombre">Noticias de actualidad</h2>
-                </div>
+    <!-- Estructura donde empieza el Header -->
+    <header>
+        <!-- Contenedor DIV para el logotipo. Clase contenedorHeader -->
+        <div class="contenedorHeader">
+            <!-- Si se hace click en el logo se retorna a la pagina principal -->
+            <a href="index.html">
+                <!-- <p class="logo">Noticias</p> -->
+                <img src="images/logo.jpg" alt="Logotipo Pillando NEWS" class="logoImg">
+                <h2 class="logoNombre">Noticias de actualidad</h2>
+                <nav>
+                    <!-- Lita de enlaces de la pagina web -->
+                    <a href="index.html" class="PILLANDO NEWS"></a>
+                    <a href="articulos.html" class="Últimas Noticas"></a>
+                    <a href="sobreNosotros.html" class="Sobre Nosotros"></a>
+                    <a href="contacto.html" class="Contacto"></a>
+                </nav>
                 <!-- Meter barra de busqueda en el centro -->
                 <section id="busqueda">
                     <form action=""></form>
 
 
-                    
+
                 </section>
-                <nav>
-                <a href="index.html" class="Inicio"></a>
-                <a href="articulos.html" class="Artículos"></a>
-                <a href="sobreNosotros.html" class="Sobre nosotros"></a>
-                <a href="contacto.html" class="Contacto"></a>
-                </nav>
+        </div>
 
-                <nav class="barraNavegador">
-                    <ul>
-                        <!-- Lita de enlaces de la pagina web -->
-                        <li><a href="index.html">Pillando NEWS</a></li>
-                        <li><a href="articulos.html">Artículos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
-                    </ul>
-                </nav>
-            </header> 
-                
-            <!-- Barra lateral -->
-            <aside>
+        <nav class="barraNavegador">
+            <ul>
 
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero siempre estara en el centro -->
+    <section id="hero">
+        <h1>Entérate de<br>las últimas noticias</h1>
+        <button>VAMOS!</button>
+    </section>
 
-
-                
-            </aside>
-
-            <!-- Footer de la web -->
-            <footer>
+    <section id="somosPillando">
+        <div class="img-container"></div>
+        <h2>Somos Pillando NEWS</h2>
+        <p>en francés: Bataille d’Aboukir, en árabe: معركة ابو قير البحريه‎)— fue un gran combate naval librado entre la
+            Marina Real británica y la Marina de la Primera República Francesa del 1 al 3 de agosto de 1798 en la bahía de Abu
+            Qir, en la costa mediterránea de Egipto. La batalla fue el punto culminante de la campaña naval que se había extendido a lo
+            largo de todo el mar</p>
+    </section>
+    <!-- Barra lateral -->
+    <aside>
 
 
 
 
-            </footer>
-    </body>
+
+    </aside>
+
+    <!-- Footer de la web -->
+    <footer>
+
+
+
+
+    </footer>
+</body>
+
 </html>
