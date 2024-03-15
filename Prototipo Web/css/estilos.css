@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 botonBusqueda{
-font-size: 0.2em; 
+font-size: 0.em; 
 padding: 5px 10px; 
 border-radius: 5px; 
 border: 1px solid #000; 
@@ -51,6 +51,7 @@ button:hover {
 }
 
 .container {
+    display: flex;
     max-width: 1300px;
     margin: auto;
 }
@@ -64,13 +65,7 @@ header.logo {
 
 }
 
-header.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-
-}
 
 header.nav {
     display: flex;
@@ -131,7 +126,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    position: fixed;
+    
     width: 100%;
     top: 0;
 }
@@ -289,6 +284,9 @@ footer.container {
     header.container {
         flex-direction: row;
         justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     header nav {
@@ -420,4 +418,52 @@ footer.container{
     #fiabilidad {
         background-position-x: calc(100vw -800px);
     }
+}
+
+
+
+/* ESTILOS DEL HEADER */
+/* Estilos para el contenedor principal dentro del header */
+.container {
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos en su centro */
+    justify-content: space-between; /* Separa el contenido a lo largo del contenedor */
+}
+
+/* Estilos para el logotipo */
+.logoImg {
+    height: 50px; /* Reduce el tamaño del logotipo */
+    width: auto; /* Mantiene la proporción del logotipo */
+}
+
+/* Estilos para el nombre del logotipo, si es necesario */
+.logoNombre {
+    margin-left: 10px; /* Añade un margen si deseas separar el texto del logotipo de la imagen */
+}
+
+/* Estilos para la sección de búsqueda */
+#busqueda {
+    display: flex; /* Usa flexbox para alinear el campo de búsqueda y el botón */
+    align-items: center; /* Alinea los elementos internos en el centro */
+}
+
+/* Estilos para el botón de búsqueda, ajusta según necesites */
+.botonBusqueda {
+    margin-left: 10px; /* Añade margen a la izquierda para separarlo del campo de búsqueda */
+    padding: 5px 10px; /* Ajusta el relleno para cambiar el tamaño */
+}
+
+/* Estilos para la barra de navegación si es necesaria alguna modificación */
+.barraNavegador {
+    display: flex; /* Esto asegura que los enlaces se alineen horizontalmente */
+    list-style: none; /* Elimina los marcadores de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+
+.barraNavegador a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin-right: 20px; /* Añade margen a la derecha de cada enlace */
+    color: black; /* Color del texto para los enlaces, ajusta según el diseño */
+    font-weight: bold; /* Hace el texto de los enlaces más grueso */
 }
