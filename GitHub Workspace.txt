@@ -1,1 +1,2 @@
-https://github.com/danielpillado/IW-58010709V-E1.git
+repositorio: https://github.com/danielpillado/IW-58010709V-E1.git
+github pages: https://danielpillado.github.io/IW-58010709V-E1/
