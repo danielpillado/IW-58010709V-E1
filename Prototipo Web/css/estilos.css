@@ -79,6 +79,11 @@ header a.hover{
 #hero h1{
     color: white;
 }
+
+#hero button{
+    font-size: 1.75em;
+
+}
 #somosPillando{
 
 }
@@ -115,10 +120,14 @@ header {
 
 #ultimasNoticias h2{
     margin-top: 0px;
+    font-size: 3em;
 }
 #ultimasNoticias .triptico{
     background-position: center center;
     background-size: cover;
+    padding:50px ;
+    margin: 20px;
+    border-radius: 12px;
 }
 .triptico:first-child{
     background-image: linear-gradient(
@@ -187,3 +196,58 @@ body {
     height: 100%; 
 }   
 
+#fiabilidad.container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#fiabilidad li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#donativos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 80vh;
+}
+#donativos h2{
+    font-size: 9vw;
+}
+#donativos button{
+    font-size: 5vw;
+}
+
+
+footer{
+    background-color: black;
+}
+footer p{
+margin: 0;
+padding: 12px;
+color: rgb(100, 100, 100);
+}
+footer.container{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+@media(min-width:720px){
+    header.container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+}
